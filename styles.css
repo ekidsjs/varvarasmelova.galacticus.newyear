@@ -1,0 +1,109 @@
+@font-face {
+    font-family: NewYear;
+    src: url(NewYearFont.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/bg.png) no-repeat center;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header {
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title {
+    font-family: NewYear;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    animation: blink 3s normal infinite;
+
+}
+
+.header-tree {
+    padding: 20px 0 20px;
+    height: 350px;
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: #e53935;
+    }
+    25% {
+        color: orangered;
+    }
+    50% {
+        color: gold;
+    }
+    75% {
+        color: forestgreen;
+    }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.my {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 27px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.happy-title {
+    font-family: NewYear;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    animation: blink 3s normal infinite;
+    margin: 11px;
+
+}
+
+.new-title {
+    font-family: NewYear;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    animation: blink 3s normal infinite;
+    margin: 10px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li {
+    text-align: center;
+    padding: 20px;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+li img {
+    height: 100px;
+}
